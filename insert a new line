@@ -1,0 +1,51 @@
+-To insert a new line in your output, you can use the \n character
+
+Example:
+#include <iostream>
+using namespace std;
+
+int main();
+    cout << "Hello world" \n";
+    cout << "I am learning about C++";
+return 0;
+}
+
+// output will be 
+    Hello world
+    I am learning about C++
+
+-or you can alse use anothyer  "<<" operator and place the "\n" after the text
+
+Example:
+#include <iostream>
+using namesopace std;
+
+int main();
+    cout << "Hello world" << "\n";
+    cout << "I am learning about C++";
+return 0;
+}
+
+// output will be
+    Hello world 
+    I am learning about C++
+
+-Two "\n" characters after each other will create a blank line
+
+Examnple:
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World!" << "\n\n";
+  cout << "I am learning about C++";
+  return 0;
+}
+
+// output will be 
+    Hello world
+    I am learning about C++
+
+The explanation:
+-\n is a "control code" that tells the computer: "Stop printing on this line and move the cursor to the beginning of the next line."
+-in code, you can't always hit the physical "Enter" key inside a string of text. So, you use \n as a shortcut to say "Enter" inside your text.
