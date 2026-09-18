@@ -1,0 +1,55 @@
+-here are some uses of slashes in C++ besides creating new lines, escape sequences. They are:
+
+1.  Code: \t
+    Name: horizontal Tab
+    What it does: Moves the cursor to the next tab stop(indents text)
+
+Example:
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World \t";
+  cout << "I am learning about C++";
+  return 0;
+}
+
+// Ouput will be:
+  Hello World 	I am learning about C++
+
+2.  Code: \\
+    Name: Backslash
+    What it does:since "\" starts every escape sequence, you need "\\" to print one on screen
+
+Example:
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World\\";
+  cout << "I am learning about C++";
+  return 0;
+}
+
+// Output will be:
+  Hello World!\I am learning C++
+
+3.  Code: \"
+    Name: Double Quote
+    What it does: Prints a quote mark (since quote end string)
+
+Exmaple:
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "They call me \"Luthfiansyah\".";
+  return 0;
+}
+
+// Output will be:
+    They call me "Luthfiansyah".
+
+Explanation:
+-  Without escape sequences, you'd hit a wall trying to print quotes, file paths, or formatted layouts. 
+   They're small but essential tools whenever you work with text output.
