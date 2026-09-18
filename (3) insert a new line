@@ -1,0 +1,27 @@
+- You can insert a new line with another way, is with the "endl" manipulator
+
+Example:
+#include <iostream>
+using namespace std;
+
+int main() {
+  cout << "Hello World!" << endl;
+  cout << "I am learning About C++";
+  return 0;
+}
+
+// Output will be
+  Hello World
+  I am learning about C++
+
+Explanation:
+- endl: This is a command (short for "end line"). When you put it in your code, it tells the computer to stop the current line and start a fresh one.
+- Instead of writing \n to start a new line, you would write endl
+  ^ Example with \n: cout << "Hello\nWorld";
+  ^ Example with endl: cout << "Hello" << endl << "World";
+  = Both result in: 
+    Hello
+    World
+- Why use endl? While \n is faster in some high-performance scenarios, 
+  endl is often preferred by beginners or in simple programs because it is more readable and ensures that the text is sent to the display immediately, 
+  rather than waiting in a buffer
