@@ -1,0 +1,45 @@
+- In C++ you can write comments — notes in your code that the computer ignores. They're there for humans reading the code.
+  Commands can be singled-lined or multi-lined 
+
+1.  Single-line comments  (//)
+    - To start a comment, type // (two forward slashes).
+    - Everything after // up to the end of that line is ignored by the program.
+    - The computer skips over it completely — it’s like writing a sticky note on a line of code.
+
+Example: 
+#include <iostream>
+using namespace std;
+
+int main() {
+  // This is a comment
+  cout << "Hello World";
+  return 0;
+}
+
+// Output will be:
+   Hello World
+
+2.  Multi-line comments (*/...../*)
+    - To start a multi-line comment, type /* (slash + asterisk).
+    - To end it, type */ (asterisk + slash).
+    - Everything between those two markers is ignored by the program, no matter how many lines it covers.
+
+Example:
+#include <iostream>
+using namespace std;
+
+int main() {
+  /* this is comment*/  
+  cout << "Hello World";
+  return 0;
+}
+
+// Output will be:
+   Hello World
+
+- Explanation:
+  ^ This excerpt is giving you a style recommendation rather than a rule. 
+    It's saying: both comment styles work fine, so pick whichever fits the situation — but there's a common convention most programmers follow.
+  ^ Use // when your note is short — a word, a phrase, or one line of explanation.
+  ^ Use /* ... */ when your note needs more room — several sentences or a whole paragraph.
+
