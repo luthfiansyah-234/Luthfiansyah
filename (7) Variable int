@@ -1,0 +1,46 @@
+-  "int" is the basic recipe for creating a variable in C++. It breaks down the syntax into three parts:
+-   To create a variable, you need three things:
+    ^ The Type: Tell the computer what kind of data you'll store (like int for whole numbers).
+    ^ The Name: Give the variable a unique name so you can find it later (like x or myName).
+    ^ The Assignment: Use the equal sign (=) to put a specific value inside that variable.
+-   The Formula: type + variableName + = + value
+
+Example:
+#include <iostream>
+using namespace std;
+
+int main() {
+  int age = 19;
+  cout << age;
+  return 0;
+}
+
+// Output will be: 
+  19
+
+-  they are mutable (changeable), and changing them is destructive to the old value.
+
+
+Example:
+#include <iostream>
+using namespace std;
+
+int main() {
+  int age = 19;   // Now age is 19
+  age = 10;       // Now age is 20
+  cout << age;
+  return 0;
+}
+
+// Output will be:
+  20
+
+-  Explanation:
+    ^ "int"   = The type (whole number)
+    ^ "age"   = The name
+    ^ "="     = The assignment operator (put the value into the box)
+    ^ "25"    = The value
+     
+    ^ A variable holds one value at a time.
+    ^ If you put a new value into it, the old value is gone forever.
+    ^ The computer doesn't keep a history or backup; it simply replaces what was there before with the new data
