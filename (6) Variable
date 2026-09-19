@@ -1,0 +1,9 @@
+- A variable is like a labeled box or container where you can store information (data) so you can use it later.
+
+  The page lists five common types from the full excerpt:
+  
+1.  int    - Whole numbers (no decimals), such as 123 or -123        Good for counting things.
+2.  double - Numbers with decimals,       such as 19.99 or -19.99    Good for precise measurements or money.
+3.  char   - A single letter or symbol,   such as 'a' or 'B'.        Must use single quotes (' ').
+4.  string - A sequence of text/words,    such as "Hello World".     Must use double quotes (" ").
+5.  bool   - One of two states,           true or false.             Like a light switch: ON or OFF.
