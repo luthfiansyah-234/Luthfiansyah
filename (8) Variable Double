@@ -1,0 +1,66 @@
+- A "double" is like a digital container designed specifically to hold decimal numbers.
+- Unlike whole numbers (like 5 or 100), a double can hold numbers with a "dot" (decimal point) and digits after it.
+- Examples: As the text says, it can store 19.99 (like a price) or -19.99 (a negative value).
+
+Example:
+#include <iostream>
+using namespace std;
+
+int main() {
+    // 1. Declare a double variable and assign a value
+    double myPrice = 19.99;
+    
+    // 2. You can also declare it first, then assign later
+    double discount = 0.15;
+    discount = 0.10; // Overwriting the previous value (0.15)
+
+    // 3. Display the variables using cout
+    cout << "The price is: " << myPrice << endl;
+    cout << "The new discount is: " << discount << endl;
+
+    // 4. Math with doubles
+    double finalPrice = myPrice - (myPrice * discount);
+    cout << "Final price after discount: " << finalPrice;
+
+    return 0;
+}
+
+// Output will be:
+  The price is: 19.99
+  The new discount is: 0.1
+  Final price after discount: 17.991
+
+Explanation:
+-  double myPrice = 19.99;       : This creates a variable named myPrice specifically to hold a floating-point number (a number with a decimal).
+-  cout << ... << ... << endl;   : This is the syntax to print text and the variable's value to the screen. The endl creates a new line.
+-  myPrice - (myPrice * discount): You can perform standard math operations with double variables.
+
+Different float and double:
+1. Precision (Accuracy)
+
+float: Has single precision. It is accurate to about 6–7 decimal digits.
+double: Has double precision. It is accurate to about 15–16 decimal digits.
+
+Example: If you store a very long number like 3.14159265358979, a float might round it off slightly after the 7th digit, while a double will keep almost all of them correct.
+
+2. Memory Size
+
+float: Uses 4 bytes (32 bits) of memory.
+double: Uses 8 bytes (64 bits) of memory.
+
+Example:
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Float uses 'f' suffix to tell compiler it's a float
+    float myFloat = 19.99f; 
+    
+    // Double is default for decimals
+    double myDouble = 19.99;
+
+    cout << "Float value: " << myFloat << endl;
+    cout << "Double value: " << myDouble << endl;
+
+    return 0;
+}
