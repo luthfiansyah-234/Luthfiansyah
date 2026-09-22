@@ -1,0 +1,45 @@
+- char (short gor 'character') data type, is used to store just one single letter, number, or symbol at a time
+- It cannot hold a whole word, a sentence, or even a two- digit number like "10" ( it would treat that as two separate chacters: '1' nd '0').
+- Example : ^ Letters: 'A' , 'B' , 'C' 
+            ^ Numbers: '1' , '2'
+            ^ Symbols: '!' , '@' , '#'
+            ^ Spaces : ' ' (a single spaces)
+- Rule: that char values are surronded by single quotes (like 'a').
+        ^ Correct: 'A'. (A single letter)
+        ^ Incorrect: a (without quotes)
+        ^ Incorrect: "A" (Double quotes that mean a string, and a char must use single quotes)
+
+- but, how if we input a char one single letter in different single quotes (like '1' , '2' , '3') 
+
+Example:
+#include <iostream>
+using namespace std;
+
+int main() {
+  char myNumber = '1' , '2' , '3' ;
+  cout << myNumber ;
+  return 0;
+}
+
+//Output will be: 
+  error
+
+- the problem is, you cannot assign three different characters to a single char variable like that
+
+- The corrected versions is:
+    ^ char myNumber = '1'.
+    ^ char myNumbers[] = {'1' , '2' , '3' }. (This creates an array and it's different thing with variable-char)
+    ^ string myNumber = "123"; (it's a string and not a char)
+
+Example the correct one:
+#include <iostream>
+using namespace std;
+
+int main() {
+  char myNumber = '1';
+  cout << myNumber ;
+  return 0;
+}
+
+//Otuput will be:
+1
