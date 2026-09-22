@@ -1,0 +1,17 @@
+- A string is just a piece of text in programming-like a word, sentence, or even a whole paragraph
+- there are three things to pay attention to in string:
+    ^ Anything you'd type as words goes into a string: names, addresses, messages, etc
+    ^ "Hello World" is a string containing those exact characters.
+    ^ Double quotes are the markers
+
+Example:
+#include <iostream>
+using namespace std;
+int main() {
+  string myLetter = "I am 19 years old";
+  cout << myLetter ;
+return 0;
+}
+
+Explanation:
+-If you input a string without a double wuotes at the star and end, the syntax will be error
