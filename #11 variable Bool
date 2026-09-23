@@ -1,0 +1,23 @@
+- Bool is a short for boolean
+- Bool is like a light switch, it can only be in one of two states:
+    ^ true (switched ON)
+    ^ False (Switched OFF)
+
+Example:
+#include <iostream>
+using namespace std;
+
+int main() {
+  int x = 6, y = 10;
+  bool isLesser = x < y;
+  cout << "x < y? " << isLesser << endl;
+
+  return 0;
+}
+
+//Output will be:
+x < y? 1
+
+Explanation:
+- The output is 1 because 6 is less than 10 and it's true statement
+- false is printed as 0, and true is usually printed as 1
